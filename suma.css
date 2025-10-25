@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: url('about.png') no-repeat center center/cover;
+  color: rgb(173, 11, 11);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container {
+  text-align: center;
+}
+.category-box {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 500px;
+  margin: auto;
+}
+.category-box div {
+  color: rgb(154, 210, 24);
+  text-align: center;
+}
+.category-box i {
+  font-size: 30px;
+  color: rgb(18, 112, 195);
+  margin-bottom: 10px;
+}
+.social-icons {
+  margin-top: 20px;
+}
+.social-icons i {
+  color: white;
+  font-size: 20px;
+  margin: 0 10px;
+}

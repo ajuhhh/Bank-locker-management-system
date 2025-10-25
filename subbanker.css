@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner-back{
+    color: white;
+    height: 100vh;
+    font-size: 30px;
+    font-family: "DM Serif Text", serif;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+   }
+   .back-video{
+       position: absolute;
+       right: 0;
+       bottom: 0;
+       z-index: -1;
+     }
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+@keyframes shadowAnimation {
+    0% {
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6); /* Darker black shadow */
+    }
+    50% {
+        box-shadow: 0px 0px 20px rgba(139, 69, 19, 0.7); /* Dark brown shadow */
+    }
+    100% {
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6); /* Return to dark black shadow */
+    }
+}
+
+.login-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    border-color: aqua;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6); /* Darker initial shadow */
+    text-align: center;
+    height: 300px;
+    width: 290px;
+    animation: shadowAnimation 6s ease-in-out infinite; /* Smooth and steady animation */
+}
+
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #f9f9f9;
+
+}
+
+.input-group i {
+    margin-right: 10px;
+    color: #555;
+}
+
+.input-group input {
+    border: none;
+    outline: none;
+    width: 100%;
+    background: transparent;
+    color: red;
+}
+.input-group input::placeholder {
+    color: white;
+    opacity: 1; 
+    font-size: 16px; 
+}
+
+.login-btn {
+    width: 90px;
+    padding: 10px;
+
+    margin-top: 15px;
+    background: #ff007f;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    background: #d6006e;
+}
+.anchor {
+    text-decoration: none;
+    color: black;
+    margin-right: 70px;
+    font-size: 15px;
+  }
+
+  .anchor:hover {
+    text-decoration: underline;
+  }
+  .anchors {
+    text-decoration: none;
+    color: black;
+    margin-right: 120px;
+    font-size: 15px;
+  }
+
+  .anchors:hover {
+    text-decoration: underline;
+  }

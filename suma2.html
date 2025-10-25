@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Locker Dashboard</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="suma2.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="admin-panel">
+            <h2>ADMIN</h2>
+        </div>
+        <ul>
+            <li><i class="material-icons">dashboard</i> Dashboard</li>
+            <li><i class="material-icons">description</i> Pages</li>
+
+            <!-- Sub Banker Dropdown -->
+            <li class="dropdown">
+                <a class="dropbtn"><i class="material-icons">account_balance</i> Sub Banker</a>
+                <ul class="dropdown-content">
+                    <li><a href="#">Add</a></li>
+                    <li><a href="#">Manage</a></li>
+                </ul>
+            </li>
+
+            <!-- Assign Locker Dropdown -->
+            <li class="dropdown">
+                <a class="dropbtn"><i class="material-icons">lock</i> Assign Locker</a>
+                <ul class="dropdown-content">
+                    <li><a href="#">Add</a></li>
+                    <li><a href="#">Manage</a></li>
+                </ul>
+            </li>
+
+            <li><i class="material-icons">bar_chart</i> Reports</li>
+            <li><i class="material-icons">settings</i> Account Settings</li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <div class="dashboard-cards">
+            <div class="card">
+                <h2>0</h2>
+                <p>Sub Admins</p>
+                <center>
+                    <button><i class="material-icons">info</i> More Info</button>
+                </center>
+            </div>
+            <div class="card">
+                <h2>0</h2>
+                <p>Listed Locker Types</p>
+                <center>
+                    <button><i class="material-icons">info</i> More Info</button>
+                </center>
+            </div>
+            <div class="card">
+                <h2>0</h2>
+                <p>Assigned Lockers</p>
+                <center>
+                    <button><i class="material-icons">info</i> More Info</button>
+                </center>
+            </div>
+        </div>
+    </div>
+
+    <script src="suma.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="banklogin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <script>
+        function login(event) {
+            event.preventDefault(); // Prevent form refresh
+
+            const username = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
+
+            // Validate credentials
+            if (username === "ajii" && password === "0612") {
+                alert("Login successful!");
+                window.location.href = "banknav.html"; // Redirect to the next page
+            } else {
+                alert("Invalid username or password.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="login-container">
+        <video autoplay loop muted plays-inline class="back-video">
+            <source src="background.mp4" type="video/mp4">
+        </video>
+        <div class="login-box">
+            <h2>BANKERS LOGIN</h2>
+            <form onsubmit="login(event)">
+                <div class="input-group">
+                    <i class="fas fa-user"></i>
+                    <input type="text" id="username" placeholder="User name" required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" id="password" placeholder="Password" required>
+                </div>
+                <button type="submit" class="login-btn">Sign In</button>
+            </form>
+            <a href="#" class="anchor">I forget my password</a>
+            <a href="index.html" class="anchors">Back to home!!</a>
+        </div>
+    </div>
+</body>
+</html>
